@@ -6,7 +6,7 @@ import StarIcon from "@/assets/icons/star.svg";
 import SparkleIcon from "@/assets/icons/sparkle.svg";
 import { HeroOrbit } from "@/components/HeroOrbit";
 import { SplineModel } from "@/components/SplineModel";
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 
 const words = [
   { text: "Hi", delay: 0.1, gradient: false, small: false },
@@ -16,7 +16,7 @@ const words = [
   { text: "Frontend Developer", delay: 1.55, gradient: false, small: true },
 ];
 
-const wordVariants = {
+const wordVariants: Variants = {
   hidden: { opacity: 0, y: 48, rotate: -3 },
   visible: (delay: number) => ({
     opacity: 1,
