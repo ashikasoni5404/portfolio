@@ -178,7 +178,7 @@ export const Header = () => {
                     }}
                   />
                 )}
-                <span className="relative z-10">
+                <span className="relative z-10 text-black">
                   {links[activeIndex].name}
                 </span>
               </button>
